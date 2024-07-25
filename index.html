@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function todo(){
+
+        
+
+            let mark1 = document.getElementById("todo1").value.toString()
+            let mark2 = document.getElementById("todo2").value.toString()
+            
+     
+            const parent = document.createElement("div")
+            const firstChild = document.childElement("div")
+            firstChild.innerHTML=mark1
+            const secondChild = document.childElement("div")
+            secondChild.innerHTML=mark2
+            const thirdChild = document.childElement("button")
+            thirdChild.innerHTML="Mark as done"
+
+            
+            outerDiv.innerHTML=mark1
+            document.getElementById("container").appendChild(outerDiv);
+
+ 
+          //  <!-- document.getElementById("container").innerHTML=originalString+` <div> -->
+          // <!-- ${ mark1} -->
+          // <!-- ${ mark2} -->
+   // <!-- <button onclick="todo()">Mark as done</button> -->
+
+//<!-- </div>` -->
+
+
+
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="todo1" placeholder="todo 1">
+    <input type="text" id="todo2" placeholder="todo 2">
+    <button onclick="todo()">Mark as done</button>
+    <div id="container">
+       
+</div>
+
+
+    
+</body>
+</html>
